@@ -12,7 +12,7 @@ using Maruko.Permission.Core.Utils;
 
 namespace Maruko.Permission.Core.Application
 {
-    internal class CrudAppServiceCore<TEntity, TEntityDto, TSearch>
+    public class CrudAppServiceCore<TEntity, TEntityDto, TSearch>
         : CurdAppService<TEntity, TEntityDto, TEntityDto, TEntityDto>,
             ICrudAppServiceCore<TEntity, TEntityDto, TSearch>
         where TEntity : class, IEntity<int>
@@ -67,7 +67,7 @@ namespace Maruko.Permission.Core.Application
         {
             return null;
         }
-        
+
         /// <summary>
         ///     返回自定义数据对象
         ///     默认返回dto集合

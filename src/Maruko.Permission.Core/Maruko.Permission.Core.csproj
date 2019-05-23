@@ -10,10 +10,4 @@
     <PackageReference Include="Maruko.EntityFrameworkCore" Version="1.0.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Application\Services\" />
-    <Folder Include="Domain\Permissions\IRepos\" />
-    <Folder Include="ORM\Repos\Permissions\" />
-  </ItemGroup>
-
 </Project>
