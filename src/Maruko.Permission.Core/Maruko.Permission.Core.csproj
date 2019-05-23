@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="maruko" Version="0.2.1" />
+    <PackageReference Include="Maruko.AutoMapper" Version="0.2.1" />
+    <PackageReference Include="Maruko.EntityFrameworkCore" Version="1.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\Services\" />
+    <Folder Include="Domain\Permissions\IRepos\" />
+    <Folder Include="ORM\Repos\Permissions\" />
+  </ItemGroup>
+
+</Project>
