@@ -10,7 +10,7 @@ namespace Maruko.Permission.Core.ORM.Extension
 {
     public static class EntityFrameworkExtension
     {
-        public static IServiceCollection AddBabyDbContext(this IServiceCollection serviceCollection)
+        public static IServiceCollection AddDeafultDbContext(this IServiceCollection serviceCollection)
         {
             var connStr = ConfigurationSetting.DefaultConfiguration.GetConnectionString("DefaultConnection");
             serviceCollection
