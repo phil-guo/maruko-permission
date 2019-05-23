@@ -18,29 +18,27 @@ namespace Maruko.Permission.Host.Controllers
             _crud = crud;
         }
 
-        /// <summary>
-        /// 设置角色菜单权限时获取
-        /// 没有首页的数据
-        /// </summary>
-        /// <param name="roleId"></param>
-        /// <returns></returns>
-        [HttpGet("getRoleMenusNotHome")]
-        public ApiReponse<object> GetRoleMenusNotHome(int roleId)
-        {
-            return null;
-            //return _crud.GetRoleMenusNotHome(roleId);
-        }
+        ///// <summary>
+        ///// 设置角色菜单权限时获取
+        ///// 没有首页的数据
+        ///// </summary>
+        ///// <param name="roleId"></param>
+        ///// <returns></returns>
+        //[HttpGet("getRoleMenusNotHome")]
+        //public ApiReponse<object> GetRoleMenusNotHome(int roleId)
+        //{
+        //    return _crud.GetRoleMenusNotHome(roleId);
+        //}
 
-        /// <summary>
-        /// 获取角色的菜单
-        /// </summary>
-        /// <param name="roleId"></param>
-        /// <returns></returns>
-        [HttpGet("getMenusByRole")]
-        public ApiReponse<object> GetRoleByMenus(int roleId)
-        {
-            return null;
-            //return _crud.GetMenusByRole(roleId);
-        }
+        ///// <summary>
+        ///// 获取角色的菜单
+        ///// </summary>
+        ///// <param name="roleId"></param>
+        ///// <returns></returns>
+        //[HttpGet("getMenusByRole")]
+        //public ApiReponse<object> GetRoleByMenus(int roleId)
+        //{
+        //    return _crud.GetMenusByRole(roleId);
+        //}
     }
 }
