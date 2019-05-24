@@ -1,10 +1,11 @@
 ﻿using System;
 using Autofac;
+using Maruko.Modules;
 using Maruko.Permission.Core.Utils.Cache;
 
 namespace Maruko.Permission.Core
 {
-    public class CoreModule : MarukoKernelModule
+    public class CoreModule : MarukoModule
     {
         public override double Order { get; set; } = 1;
 

@@ -48,11 +48,6 @@ namespace Maruko.Permission.Core.ORM
             return result;
         }
 
-        public List<dynamic> PageSearchSelector(out int total, Expression<Func<TEntity, object>> selector, Expression<Func<TEntity, bool>> predicate = null,
-            Expression<Func<TEntity, int>> orderSelector = null, int pageIndex = 1, int pageMax = 20)
-        {
-            throw new NotImplementedException();
-        }
 
         /// <summary>
         /// 批量添加
@@ -76,16 +71,6 @@ namespace Maruko.Permission.Core.ORM
             entities.ForEach(item => { _unitOfWork.SetModify<TEntity, int>(item); });
             var result = UnitOfWork.Commit();
             return result != 0;
-        }
-
-        public TEntity UpdateNotCommit(TEntity entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public TEntity InsertNotCommit(TEntity entity)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Maruko.EntityFrameworkCore.Context;
+using Maruko.Permission.Core.Domain.Permissions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Maruko.Permission.Core.ORM
@@ -10,6 +11,11 @@ namespace Maruko.Permission.Core.ORM
     {
 
         //添加上下文
+        public DbSet<MkoUser> MkoUsers { get; set; }
+        public DbSet<MkoOperate> MkoOperates { get; set; }
+        public DbSet<MkoMenu> MkoMenus { get; set; }
+        public DbSet<MkoRole> MkoRoles { get; set; }
+        public DbSet<MkoRoleMenu> MkoRoleMenus { get; set; }
 
         public DefaultDbContext(DbContextOptions options) : base(options)
         {

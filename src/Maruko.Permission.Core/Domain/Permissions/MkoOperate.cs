@@ -24,6 +24,6 @@ namespace Maruko.Permission.Core.Domain.Permissions
         /// 唯一标识
         /// </summary>
         [Required]
-        public int unique { get; set; }
+        public int Unique { get; set; }
     }
 }

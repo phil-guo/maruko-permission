@@ -28,5 +28,10 @@ namespace Maruko.Permission.Core.Domain.Permissions
         [StringLength(500)]
         [Required]
         public string Password { get; set; }
+
+        /// <summary>
+        /// 是否开启
+        /// </summary>
+        public bool IsEnable { get; set; }
     }
 }

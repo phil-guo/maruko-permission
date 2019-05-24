@@ -1,6 +1,8 @@
-﻿namespace Maruko.Permission.Host
+﻿using Maruko.Modules;
+
+namespace Maruko.Permission.Host
 {
-    public class HostModule : MarukoKernelModule
+    public class HostModule : MarukoModule
     {
         public override double Order { get; set; } = 2;
     }
