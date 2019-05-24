@@ -9,12 +9,26 @@
 
 using Maruko.Application.Servers.Dto;
 using Maruko.AutoMapper.AutoMapper;
-using Maruko.Permission.Core.Domain.Permissions;
 
-namespace Maruko.Permission.Core.Application.Services.Permissions.DTO.SysUser
+namespace Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoUser
 {
-    [AutoMap(typeof(MkoUser))]
+    [AutoMap(typeof(Domain.Permissions.MkoUser))]
     public class MkoUserDto : EntityDto
     {
+        /// <summary>
+        ///     角色id
+        /// </summary>
+        public int RoleId { get; set; }
+
+        /// <summary>
+        ///     用户名
+        /// </summary>
+        //[TryValidateNullOrEmptyModel(ErrorMessage = "用户名不能为空")]
+        public string UserName { get; set; }
+
+        /// <summary>
+        ///     密码
+        /// </summary>
+        public string Password { get; set; }
     }
 }

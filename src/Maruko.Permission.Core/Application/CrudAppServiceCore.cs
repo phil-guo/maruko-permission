@@ -31,7 +31,7 @@ namespace Maruko.Permission.Core.Application
             return new ApiReponse<object>(ConvertToEntitieDtos(datas).DataToDictionary(total));
         }
 
-        public ApiReponse<object> CreateOrEdit(TEntityDto model)
+        public virtual ApiReponse<object> CreateOrEdit(TEntityDto model)
         {
             TEntity data = null;
             if (model.Id == 0)

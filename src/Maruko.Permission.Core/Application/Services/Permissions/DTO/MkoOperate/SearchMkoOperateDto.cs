@@ -1,4 +1,3 @@
-
 //===================================================================================
 //此代码由代码生成器自动生成      
 //对此文件的更改可能会导致不正确的行为，并且如果重新生成代码，这些更改将会丢失。
@@ -8,14 +7,11 @@
 //版本1.0
 //===================================================================================
 
+using Maruko.Application.Servers.Dto;
 
-using Maruko.Dependency;
-using Maruko.Permission.Core.Application.Services.Permissions.DTO.SysRoleMenu;
-using Maruko.Permission.Core.Domain.Permissions;
-
-namespace Maruko.Permission.Core.Application.Services.Permissions
+namespace Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoOperate
 {
-    public interface IMkoRoleMenuService : ICrudAppServiceCore<MkoRoleMenu, MkoRoleMenuDto, SearchMkoRoleMenuDto>, IDependencyTransient
+    public class SearchMkoOperateDto : PageDto
     {
     }
 }

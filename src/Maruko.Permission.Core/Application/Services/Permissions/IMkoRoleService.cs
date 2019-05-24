@@ -10,7 +10,7 @@
 
 
 using Maruko.Dependency;
-using Maruko.Permission.Core.Application.Services.Permissions.DTO.SysRole;
+using Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole;
 using Maruko.Permission.Core.Domain.Permissions;
 
 namespace Maruko.Permission.Core.Application.Services.Permissions

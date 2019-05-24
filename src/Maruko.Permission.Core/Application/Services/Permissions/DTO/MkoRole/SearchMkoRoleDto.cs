@@ -8,13 +8,10 @@
 //===================================================================================
 
 using Maruko.Application.Servers.Dto;
-using Maruko.AutoMapper.AutoMapper;
-using Maruko.Permission.Core.Domain.Permissions;
 
-namespace Maruko.Permission.Core.Application.Services.Permissions.DTO.SysOperate
+namespace Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole
 {
-    [AutoMap(typeof(MkoOperate))]
-    public class MkoOperateDto : EntityDto
+    public class SearchMkoRoleDto : PageDto
     {
     }
 }

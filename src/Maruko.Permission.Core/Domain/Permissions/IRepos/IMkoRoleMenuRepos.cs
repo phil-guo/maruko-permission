@@ -8,6 +8,7 @@
 //版本1.0
 //===================================================================================
 
+using System.Collections.Generic;
 using Maruko.Dependency;
 using Maruko.Domain.Repositories;
 
@@ -15,5 +16,14 @@ namespace Maruko.Permission.Core.Domain.Permissions.IRepos
 {
     public interface IMkoRoleMenuRepos : IRepository<MkoRoleMenu>, IDependencyScoped
     {
+        /// <summary>
+        /// 获取角色的菜单
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        List<MkoMenu> GetMenusForRoleAsync(int roleId);
+
+
+        List<MkoRoleMenu> GetSysRoleMenus(int? roleId);
     }
 }

@@ -1,5 +1,5 @@
 ﻿using Maruko.Permission.Core.Application.Services.Permissions;
-using Maruko.Permission.Core.Application.Services.Permissions.DTO.SysUser;
+using Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoUser;
 using Maruko.Permission.Core.Domain.Permissions;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;

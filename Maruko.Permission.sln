@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maruko.Permission.Core", "src\Maruko.Permission.Core\Maruko.Permission.Core.csproj", "{24EB7C83-CCEB-4ED0-83B5-3187C89F317D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maruko.Permission.Host", "src\Maruko.Permission.Host\Maruko.Permission.Host.csproj", "{89FEB151-89A9-4C25-BC78-C3BBA59D1EDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maruko.Permission.Host", "src\Maruko.Permission.Host\Maruko.Permission.Host.csproj", "{89FEB151-89A9-4C25-BC78-C3BBA59D1EDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

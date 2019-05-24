@@ -8,10 +8,21 @@
 //===================================================================================
 
 using Maruko.Application.Servers.Dto;
+using Maruko.AutoMapper.AutoMapper;
 
-namespace Maruko.Permission.Core.Application.Services.Permissions.DTO.SysRole
+namespace Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoOperate
 {
-    public class SearchMkoRoleDto : PageDto
+    [AutoMap(typeof(Domain.Permissions.MkoOperate))]
+    public class MkoOperateDto : EntityDto
     {
+        /// <summary>
+        /// 名称不能为空
+        /// </summary>
+        //[TryValidateNullOrEmptyModel(ErrorMessage = "名称不能为空")]
+        public string Name { get; set; }
+
+        public string Remark { get; set; }
+
+        public int Unique { get; set; }
     }
 }

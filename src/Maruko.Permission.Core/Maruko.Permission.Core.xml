@@ -38,6 +38,131 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoMenu.MkoMenuDto.ParentId">
+            <summary>
+                父级
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoMenu.MkoMenuDto.Name">
+            <summary>
+                菜单名称
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoMenu.MkoMenuDto.Url">
+            <summary>
+                菜单地址
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoMenu.MkoMenuDto.Level">
+            <summary>
+                层级
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoMenu.MkoMenuDto.Operates">
+            <summary>
+                菜单权限(list<int /> json)
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoMenu.MkoMenuDto.Icon">
+            <summary>
+            菜单图标
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoMenu.MkoMenuDto.OperateArray">
+            <summary>
+            菜单权限
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoMenu.SetMenuPermissionDto.MenuId">
+            <summary>
+            菜单id
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoMenu.SetMenuPermissionDto.Operates">
+            <summary>
+            功能集合
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoOperate.GetMenuOfOperateDto.RoleId">
+            <summary>
+            角色id
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoOperate.GetMenuOfOperateDto.MenuId">
+            <summary>
+            菜单id
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoOperate.MkoOperateDto.Name">
+            <summary>
+            名称不能为空
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole.RoleOfMenusOutput.Id">
+            <summary>
+            唯一标识
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole.RoleOfMenusOutput.ParentId">
+            <summary>
+            父级
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole.RoleOfMenusOutput.Name">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole.RoleOfMenusOutput.Url">
+            <summary>
+            菜单地址
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole.RoleOfMenusOutput.Nodes">
+            <summary>
+            子集合
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole.RoleOfMenusOutput.OperateArray">
+            <summary>
+            菜单下的按钮操作集合
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole.SetRolePermissionDto.RoleId">
+            <summary>
+            角色id
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole.SetRolePermissionInput.RoleId">
+            <summary>
+            角色id
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole.SetRolePermissionInput.Menu">
+            <summary>
+            角色下的菜单集合
+            </summary>
+        </member>
+        <member name="M:Maruko.Permission.Core.Application.Services.Permissions.Imp.MkoMenuService.GetRoleMenusNotHome(System.Int32)">
+            <summary>
+                设置角色菜单权限时获取
+                没有首页的数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Core.Application.Services.Permissions.Imp.MkoRoleService.GetRoleOfMenus(System.Int32)">
+            <summary>
+                获取角色的菜单
+            </summary>
+            <param name="roleId"></param>
+        </member>
+        <member name="M:Maruko.Permission.Core.Domain.Permissions.IRepos.IMkoRoleMenuRepos.GetMenusForRoleAsync(System.Int32)">
+            <summary>
+            获取角色的菜单
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
         <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoMenu.ParentId">
             <summary>
                 父级

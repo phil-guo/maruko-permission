@@ -9,7 +9,7 @@
 
 using Maruko.Application.Servers.Dto;
 
-namespace Maruko.Permission.Core.Application.Services.Permissions.DTO.SysUser
+namespace Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoUser
 {
     public class SearchMkoUserDto : PageDto
     {
