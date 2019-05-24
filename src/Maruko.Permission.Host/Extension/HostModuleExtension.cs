@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Maruko.AutoMapper;
+using Maruko.EntityFrameworkCore;
 using Maruko.Extensions;
 using Maruko.Modules;
 using Maruko.Permission.Core;
@@ -14,6 +15,7 @@ namespace Maruko.Permission.Host.Extension
             {
                 new MarukoKernelModule(),
                 new AutoMapperModule(),
+                new EntityFrameworkCoreModule(),
                 new CoreModule(),               
                 new HostModule {IsLastModule = true}
             });

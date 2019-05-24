@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Maruko.Permission.Core</name>
+    </assembly>
+    <members>
+        <member name="M:Maruko.Permission.Core.Application.CrudAppServiceCore`3.SearchFilter(`2)">
+            <summary>
+                查询条件赛选
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Core.Application.CrudAppServiceCore`3.OrderFilter">
+            <summary>
+                排序条件筛选
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Core.Application.CrudAppServiceCore`3.ConvertToEntitieDtos(System.Collections.Generic.List{`0})">
+            <summary>
+                返回自定义数据对象
+                默认返回dto集合
+            </summary>
+            <param name="entities"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Core.Application.ICrudAppServiceCore`3.PageSearch(`2)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Core.Application.ICrudAppServiceCore`3.CreateOrEdit(`1)">
+            <summary>
+            添加或修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoMenu.ParentId">
+            <summary>
+                父级
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoMenu.Name">
+            <summary>
+                菜单名称
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoMenu.Url">
+            <summary>
+                菜单地址
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoMenu.Level">
+            <summary>
+                层级
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoMenu.Operates">
+            <summary>
+                菜单权限(list<int /> json)
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoMenu.Sort">
+            <summary>
+                排序
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoMenu.Icon">
+            <summary>
+            菜单图标
+            </summary>
+        </member>
+        <member name="M:Maruko.Permission.Core.Domain.Permissions.MkoMenu.AddOperateSort">
+            <summary>
+                添加菜单时，操作排序自动加1
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoOperate.Name">
+            <summary>
+                按钮名称
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoOperate.Remark">
+            <summary>
+                备注
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoOperate.Unique">
+            <summary>
+            唯一标识
+            </summary>
+        </member>
+        <member name="T:Maruko.Permission.Core.Domain.Permissions.MkoRole">
+            <summary>
+                角色
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoRole.Name">
+            <summary>
+                角色名称
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoRole.Remark">
+            <summary>
+                备注
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoRoleMenu.RoleId">
+            <summary>
+                角色id
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoRoleMenu.MenuId">
+            <summary>
+                菜单id
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoRoleMenu.Operates">
+            <summary>
+                操作权限，(list<object/> json)
+            </summary>
+        </member>
+        <member name="T:Maruko.Permission.Core.Domain.Permissions.MkoUser">
+            <summary>
+            系统用户
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoUser.RoleId">
+            <summary>
+                角色id
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoUser.UserName">
+            <summary>
+                用户名
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoUser.Password">
+            <summary>
+                密码
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Domain.Permissions.MkoUser.IsEnable">
+            <summary>
+            是否开启
+            </summary>
+        </member>
+        <member name="M:Maruko.Permission.Core.ORM.BaseRepository`1.PageSearch(System.Int32@,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Int32}},System.Int32,System.Int32)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="total"></param>
+            <param name="predicate"></param>
+            <param name="orderSelector"></param>
+            <param name="pageIndex"></param>
+            <param name="pageMax"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Core.ORM.BaseRepository`1.BatchInsert(System.Collections.Generic.List{`0})">
+            <summary>
+            批量添加
+            </summary>
+            <param name="entities"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Core.ORM.BaseRepository`1.BatchUpdate(System.Collections.Generic.List{`0})">
+            <summary>
+            批量修改
+            </summary>
+            <param name="entities"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Maruko.Permission.Core.ORM.DefaultDbContext">
+            <summary>
+            提供一个默认的efcore上下文
+            </summary>
+        </member>
+        <member name="M:Maruko.Permission.Core.Utils.UitlsExtensions.DataToDictionary``1(``0,System.Int32)">
+            <summary>
+            列表返回数据转换成字典
+            </summary>
+            <typeparam name="T">数据对象</typeparam>
+            <param name="datas">数据</param>
+            <param name="total">总条数</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

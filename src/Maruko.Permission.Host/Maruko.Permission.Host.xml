@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Maruko.Permission.Host</name>
+    </assembly>
+    <members>
+        <member name="T:Maruko.Permission.Host.ApiVersions">
+            <summary>
+            版本枚举
+            </summary>
+        </member>
+        <member name="T:Maruko.Permission.Host.AuthorizationType">
+            <summary>
+            接口验证方式
+            </summary>
+        </member>
+        <member name="F:Maruko.Permission.Host.AuthorizationType.JWT">
+            <summary>
+            jwt验证
+            </summary>
+        </member>
+        <member name="T:Maruko.Permission.Host.ControllerBaseCrud`3">
+            <summary>
+            控制器crud操作基类
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <typeparam name="TEntityDto"></typeparam>
+            <typeparam name="TSearch"></typeparam>
+        </member>
+        <member name="M:Maruko.Permission.Host.ControllerBaseCrud`3.PageSearch(`2)">
+            <summary>
+            分页查询
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Host.ControllerBaseCrud`3.CreateOrUpdate(`1)">
+            <summary>
+            创建或修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Maruko.Permission.Host.Controllers.OperateController">
+            <summary>
+            功能/按钮
+            </summary>
+        </member>
+        <member name="T:Maruko.Permission.Host.Controllers.RoleController">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="T:Maruko.Permission.Host.Controllers.UserController">
+            <summary>
+            系统用户
+            </summary>
+        </member>
+        <member name="M:Maruko.Permission.Host.JWT.IJwtSecurity.JwtSecurityToken(System.Int32,System.String)">
+            <summary>
+            生成jwt
+            </summary>
+            <param name="userId"></param>
+            <param name="roleName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Host.JWT.IJwtSecurity.JwtSecurityToken(System.Collections.Generic.List{System.Security.Claims.Claim},System.String)">
+            <summary>
+            生成jwt
+            </summary>
+            <param name="claims"></param>
+            <param name="roleName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Maruko.Permission.Host.JWT.JwtSettings.Issuer">
+            <summary>
+            证书颁发者
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Host.JWT.JwtSettings.Audience">
+            <summary>
+            允许使用的角色
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Host.JWT.JwtSettings.SecretKey">
+            <summary>
+            加密字符串
+            </summary>
+        </member>
+    </members>
+</doc>

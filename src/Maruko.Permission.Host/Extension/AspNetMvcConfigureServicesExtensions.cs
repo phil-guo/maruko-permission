@@ -99,7 +99,7 @@ namespace Maruko.Permission.Host.Extension
 
         private static void AddSwagger(IServiceCollection service)
         {
-            const string projectName = "小说/漫画站群";
+            const string projectName = "小丸子通用权限管理";
 
             service.AddSwaggerGen(c =>
             {
@@ -132,9 +132,9 @@ namespace Maruko.Permission.Host.Extension
 
                 //设置说明 
                 var basePath = PlatformServices.Default.Application.ApplicationBasePath;
-                var xmlPath = Path.Combine(basePath, "Wl.Station.Baby.WebApi.xml");
+                var xmlPath = Path.Combine(basePath, "Maruko.Permission.Host.xml");
                 c.IncludeXmlComments(xmlPath);
-                var xmlAppPath = Path.Combine(basePath, "Wl.Station.Baby.Application.xml");
+                var xmlAppPath = Path.Combine(basePath, "Maruko.Permission.Core.xml");
                 c.IncludeXmlComments(xmlAppPath);
             });
         }
