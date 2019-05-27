@@ -7,7 +7,6 @@
 //版本1.0
 //===================================================================================
 
-using System;
 using Maruko.Application;
 using Maruko.ObjectMapping;
 using Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoUser;
@@ -58,7 +57,7 @@ namespace Maruko.Permission.Core.Application.Services.Permissions.Imp
                 : new ApiReponse<object>("操作成功");
         }
 
-        public ApiReponse<object> LoginIn(LoginInDto model)
+        public dynamic LoginIn(LoginInDto model)
         {
             model.Password = model.Password.Md5Encrypt();
 
@@ -67,21 +66,12 @@ namespace Maruko.Permission.Core.Application.Services.Permissions.Imp
             if (entity == null)
                 throw new MarukoException("账号或者密码错误");
 
-            //var token = _cache.Get<string>(AspNetMvcGlobal.TokenCacheKey(entity.Id.ToString()));
-            //if (string.IsNullOrEmpty(token))
-            //{
-            //    token = _jwt.JwtSecurityToken(entity.Id, entity.RoleId.ToString());
-            //    _cache.Set(AspNetMvcGlobal.TokenCacheKey(entity.Id.ToString()), token, TimeSpan.FromHours(2));
-            //}
-
-            return new ApiReponse<object>(new
+            return new
             {
                 entity.Id,
                 entity.RoleId,
                 entity.UserName,
-                //entity.Amount,
-                //Token = token,
-            });
+            };
         }
     }
 }

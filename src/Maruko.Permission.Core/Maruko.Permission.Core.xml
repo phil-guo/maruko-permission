@@ -143,6 +143,73 @@
             角色下的菜单集合
             </summary>
         </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoUser.LoginInDto.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoUser.LoginInDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoUser.MkoUserDto.RoleId">
+            <summary>
+                角色id
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoUser.MkoUserDto.UserName">
+            <summary>
+                用户名
+            </summary>
+        </member>
+        <member name="P:Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoUser.MkoUserDto.Password">
+            <summary>
+                密码
+            </summary>
+        </member>
+        <member name="M:Maruko.Permission.Core.Application.Services.Permissions.IMkoMenuService.GetRoleMenusNotHome(System.Int32)">
+            <summary>
+            设置角色菜单权限时获取
+            没有首页的数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Core.Application.Services.Permissions.IMkoMenuService.GetMenusByRole(System.Int32)">
+            <summary>
+            根据角色获取菜单
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Core.Application.Services.Permissions.IMkoOperateService.GetMenuOfOperate(Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoOperate.GetMenuOfOperateDto)">
+            <summary>
+            获取菜单下的功能
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Core.Application.Services.Permissions.IMkoRoleService.SetRolePermission(Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole.SetRolePermissionDto)">
+            <summary>
+            设置角色权限
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Core.Application.Services.Permissions.IMkoRoleService.GetRoleOfMenus(System.Int32)">
+            <summary>
+            获取角色菜单
+             </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Core.Application.Services.Permissions.IMkoUserService.LoginIn(Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoUser.LoginInDto)">
+            <summary>
+            登陆
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="M:Maruko.Permission.Core.Application.Services.Permissions.Imp.MkoMenuService.GetRoleMenusNotHome(System.Int32)">
             <summary>
                 设置角色菜单权限时获取

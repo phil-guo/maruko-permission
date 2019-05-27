@@ -12,10 +12,24 @@
 using Maruko.Dependency;
 using Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole;
 using Maruko.Permission.Core.Domain.Permissions;
+using Maruko.Permission.Core.Utils;
 
 namespace Maruko.Permission.Core.Application.Services.Permissions
 {
     public interface IMkoRoleService : ICrudAppServiceCore<MkoRole, MkoRoleDto, SearchMkoRoleDto>, IDependencyTransient
     {
+        /// <summary>
+        /// 设置角色权限
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        ApiReponse<object> SetRolePermission(SetRolePermissionDto input);
+
+        /// <summary>
+        /// 获取角色菜单
+        ///  </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        ApiReponse<object> GetRoleOfMenus(int roleId);
     }
 }

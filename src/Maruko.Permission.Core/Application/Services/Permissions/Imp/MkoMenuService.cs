@@ -16,7 +16,6 @@ using Maruko.AutoMapper.AutoMapper;
 using Maruko.Domain.Specification;
 using Maruko.ObjectMapping;
 using Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoMenu;
-using Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRoleMenu;
 using Maruko.Permission.Core.Domain.Permissions;
 using Maruko.Permission.Core.Domain.Permissions.IRepos;
 using Maruko.Permission.Core.Utils;
@@ -51,10 +50,10 @@ namespace Maruko.Permission.Core.Application.Services.Permissions.Imp
             var result = new { menuIds = new List<string>(), list = new List<dynamic>() };
 
             var datas = Repository.GetAll().OrderBy(item => item.Id).AsNoTracking().ToList();
-            var listMenus = new List<RoleByMenuDto>();
+            var listMenus = new List<MenuByRoleDto>();
             datas.ForEach(item =>
             {
-                listMenus.Add(new RoleByMenuDto
+                listMenus.Add(new MenuByRoleDto
                 {
                     ParentId = item.ParentId,
                     Id = item.Id,
@@ -62,7 +61,7 @@ namespace Maruko.Permission.Core.Application.Services.Permissions.Imp
                     Icon = item.Icon,
                     Path = item.Url,
                     Operates = item.Operates,
-                    Children = new List<RoleByMenuDto>()
+                    Children = new List<MenuByRoleDto>()
                 });
             });
 
@@ -205,14 +204,14 @@ namespace Maruko.Permission.Core.Application.Services.Permissions.Imp
             return datas;
         }
 
-        private List<RoleByMenuDto> GetRoleOfMenus(int roleId)
+        private List<MenuByRoleDto> GetRoleOfMenus(int roleId)
         {
             var datas = GetRoleMenu(roleId);
 
-            var listMenus = new List<RoleByMenuDto>();
+            var listMenus = new List<MenuByRoleDto>();
             datas.ForEach(item =>
             {
-                listMenus.Add(new RoleByMenuDto
+                listMenus.Add(new MenuByRoleDto
                 {
                     ParentId = item.ParentId,
                     Id = item.Id,
@@ -248,7 +247,7 @@ namespace Maruko.Permission.Core.Application.Services.Permissions.Imp
             return menus;
         }
 
-        private void BuildMeunsRecursiveTree(List<RoleByMenuDto> list, RoleByMenuDto currentTree)
+        private void BuildMeunsRecursiveTree(List<MenuByRoleDto> list, MenuByRoleDto currentTree)
         {
             list.ForEach(item =>
             {

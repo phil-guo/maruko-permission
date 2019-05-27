@@ -1,6 +1,7 @@
 ﻿using Maruko.Permission.Core.Application.Services.Permissions;
 using Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole;
 using Maruko.Permission.Core.Domain.Permissions;
+using Maruko.Permission.Core.Utils;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,27 +22,27 @@ namespace Maruko.Permission.Host.Controllers
             _crud = crud;
         }
 
-        ///// <summary>
-        ///// 设置角色权限
-        ///// </summary>
-        ///// <param name="model"></param>
-        ///// <returns></returns>
-        //[HttpPost("setRolePermission")]
-        //public ApiReponse<object> SetRolePermission(SetRolePermissionDto model)
-        //{
-        //    return _crud.SetRolePermission(model);
-        //}
+        /// <summary>
+        /// 设置角色权限
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [HttpPost("setRolePermission")]
+        public ApiReponse<object> SetRolePermission(SetRolePermissionDto model)
+        {
+            return _crud.SetRolePermission(model);
+        }
 
-        ///// <summary>
-        ///// 获取角色菜单
-        ///// roleId=0时获取全部菜单
-        ///// </summary>
-        ///// <param name="roleId"></param>
-        ///// <returns></returns>
-        //[HttpGet("getRoleOfMenus")]
-        //public ApiReponse<object> GetRoleOfMenus(int roleId)
-        //{
-        //    return _crud.GetRoleOfMenus(roleId);
-        //}
+        /// <summary>
+        /// 获取角色菜单
+        /// roleId=0时获取全部菜单
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        [HttpGet("getRoleOfMenus")]
+        public ApiReponse<object> GetRoleOfMenus(int roleId)
+        {
+            return _crud.GetRoleOfMenus(roleId);
+        }
     }
 }

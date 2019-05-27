@@ -17,5 +17,11 @@ namespace Maruko.Permission.Core.Application.Services.Permissions
 {
     public interface IMkoUserService : ICrudAppServiceCore<MkoUser, MkoUserDto, SearchMkoUserDto>, IDependencyTransient
     {
+        /// <summary>
+        /// 登陆
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        dynamic LoginIn(LoginInDto model);
     }
 }

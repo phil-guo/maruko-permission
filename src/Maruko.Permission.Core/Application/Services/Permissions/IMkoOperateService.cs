@@ -12,10 +12,17 @@
 using Maruko.Dependency;
 using Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoOperate;
 using Maruko.Permission.Core.Domain.Permissions;
+using Maruko.Permission.Core.Utils;
 
 namespace Maruko.Permission.Core.Application.Services.Permissions
 {
     public interface IMkoOperateService : ICrudAppServiceCore<MkoOperate, MkoOperateDto, SearchMkoOperateDto>, IDependencyTransient
     {
+        /// <summary>
+        /// 获取菜单下的功能
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        ApiReponse<object> GetMenuOfOperate(GetMenuOfOperateDto model);
     }
 }

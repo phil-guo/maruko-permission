@@ -41,20 +41,64 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="M:Maruko.Permission.Host.Controllers.MenuController.GetRoleMenusNotHome(System.Int32)">
+            <summary>
+            设置角色菜单权限时获取
+            没有首页的数据
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Host.Controllers.MenuController.GetRoleByMenus(System.Int32)">
+            <summary>
+            获取角色的菜单
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
         <member name="T:Maruko.Permission.Host.Controllers.OperateController">
             <summary>
             功能/按钮
             </summary>
+        </member>
+        <member name="M:Maruko.Permission.Host.Controllers.OperateController.GetMenuOfOperate(Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoOperate.GetMenuOfOperateDto)">
+            <summary>
+            获取菜单下的所有功能
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
         </member>
         <member name="T:Maruko.Permission.Host.Controllers.RoleController">
             <summary>
             角色
             </summary>
         </member>
+        <member name="M:Maruko.Permission.Host.Controllers.RoleController.SetRolePermission(Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoRole.SetRolePermissionDto)">
+            <summary>
+            设置角色权限
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Maruko.Permission.Host.Controllers.RoleController.GetRoleOfMenus(System.Int32)">
+            <summary>
+            获取角色菜单
+            roleId=0时获取全部菜单
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
         <member name="T:Maruko.Permission.Host.Controllers.UserController">
             <summary>
-            系统用户
+                系统用户
             </summary>
+        </member>
+        <member name="M:Maruko.Permission.Host.Controllers.UserController.LoginIn(Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoUser.LoginInDto)">
+            <summary>
+                系统用户登陆
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
         </member>
         <member name="M:Maruko.Permission.Host.JWT.IJwtSecurity.JwtSecurityToken(System.Int32,System.String)">
             <summary>

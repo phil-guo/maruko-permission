@@ -12,10 +12,24 @@
 using Maruko.Dependency;
 using Maruko.Permission.Core.Application.Services.Permissions.DTO.MkoMenu;
 using Maruko.Permission.Core.Domain.Permissions;
+using Maruko.Permission.Core.Utils;
 
 namespace Maruko.Permission.Core.Application.Services.Permissions
 {
     public interface IMkoMenuService : ICrudAppServiceCore<MkoMenu, MkoMenuDto, SearchMkoMenuDto>, IDependencyTransient
     {
+        /// <summary>
+        /// 设置角色菜单权限时获取
+        /// 没有首页的数据
+        /// </summary>
+        /// <returns></returns>
+        ApiReponse<object> GetRoleMenusNotHome(int roleId);
+
+        /// <summary>
+        /// 根据角色获取菜单
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
+        ApiReponse<object> GetMenusByRole(int roleId);
     }
 }
