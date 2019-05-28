@@ -19,6 +19,7 @@ namespace Maruko.Permission.Host
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://*:39001")
                 .UseStartup<Startup>();
     }
 }

@@ -21,7 +21,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "document",
-      "applicationUrl": "http://127.0.0.1:5000",
+      "applicationUrl": "http://127.0.0.1:39001",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
