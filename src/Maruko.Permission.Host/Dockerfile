@@ -11,4 +11,4 @@ WORKDIR /app
 EXPOSE 39001
 COPY . .
 #RUN apt-get update && apt-get install -y --no-install-recommends libgdiplus libc6-dev && rm -rf /var/lib/apt/lists/* 
-ENTRYPOINT ["dotnet", "Maruko.Permission.Host"]
+ENTRYPOINT ["dotnet", "Maruko.Permission.Host.dll"]
